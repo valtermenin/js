@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font: normal  20pt arial};
+    </style>
+
+</head>
+<body>
+    
+    <p>Clique no botão a seguir para chamar a função</p>
+
+    <form>
+    <input type=”button” onclick='sayHello("valter")' value='Say Hello'>
+    </form>
+    
+    <p>Use texto diferente no método write e tente …</p>
+
+    <script>
+        var nome = window.prompt("Digite o seo nome ...")
+       document.write(`olá, ${nome} seu nome tem ${nome.length} letras</br>`)
+       document.write(`olá, ${nome} seu nome em MAIUSCULAS é ${nome.toUpperCase()}</br>`)
+       document.write(`olá, ${nome} seu nome em minusculas é ${nome.toLowerCase()}</br>`)
+
+       var n1 = Number(1540.35)
+       document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+      
+       function sayHello(t1)
+       {
+       document.write ('Hello there!' + t1);
+       }
+
+    </script>
+</body>
+</html>
